@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function () {
+module.exports = (function () {
   var configs = {};
 
   configs.NAMESPACE = 'cy-';
@@ -8,5 +8,5 @@ module.exports = function () {
   configs.default = {};
 
   return configs;
-};
+})();
 //# sourceMappingURL=../sourcemaps/configs/default.js.map

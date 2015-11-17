@@ -3,7 +3,8 @@ function taskWatch(gulp, options) {
 
   return function() {
     gulp.watch(options.src + '**/*.{js,es6}', ['transpile']);
-    gulp.watch(options.dest + '/**/*.*', ['sample']);
+
+    //gulp.watch(options.dest + '/**/*.js', ['sample']);
   }
 }
 module.exports = taskWatch;
