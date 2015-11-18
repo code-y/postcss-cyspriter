@@ -33,13 +33,13 @@
    "license": "ISC",
    "homepage": "https://github.com/Code-Y/postcss-cyspriter#readme",
    "dependencies": {
+      "bluebird": "^3.0.5",
       "gulp-postcss": "^6.0.1",
       "lodash": "^3.10.1"
    },
    "devDependencies": {
       "autoprefixer": "^6.1.0",
       "babel-preset-es2015": "^6.1.18",
-      "bluebird": "^3.0.5",
       "colors": "^1.1.2",
       "gulp": "^3.9.0",
       "gulp-babel": "^6.1.0",
