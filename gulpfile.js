@@ -1,6 +1,6 @@
 'use strict';
 
-let
+var
   gulp = require('gulp'),
   path = require('path'),
   Promise = require('bluebird'),
@@ -18,8 +18,9 @@ let
   }
 ;
 
-let task = (task) => require(path.join(configs.root, 'gulp-tasks', task + '.js')).call(this, gulp, configs)
-;
+var task = function(task) {
+  return require(path.join(configs.root, 'gulp-tasks', task + '.js')).call(this, gulp, configs);
+};
 
 gulp
   .task('watch', task('Watch'))

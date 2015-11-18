@@ -10,6 +10,7 @@ function taskTranspile(gulp, options) {
     ;
 
   return function() {
+
     return gulp
       .src(options.src + '**/*.{js,es6}')
 
