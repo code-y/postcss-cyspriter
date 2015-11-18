@@ -1,0 +1,10 @@
+{
+   "restartable": "rs",
+   "verbose": false,
+   "watch" : [
+      "./dist"
+   ],
+   "env": {
+      "NODE_ENV" : "development"
+   }
+}
