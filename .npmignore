@@ -7,3 +7,6 @@ test/
 
 gulpfile.js
 gulp-tasks
+/index.js
+/nodemon.json
+/.eslintrc
