@@ -1,51 +1,52 @@
 {
-   "name": "postcss-cyspriter",
-   "version": "0.0.1",
-   "description": "PostCSS Plugin for Working With Sprites",
-   "main": "index.js",
-   "scripts": {
-      "dev" : "nodemon test.js"
-   },
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Code-Y/postcss-cyspriter.git"
-   },
-   "keywords": [
-      "PostCSS",
-      "Sprites"
-   ],
-   "author": "CodeY <https://github.com/Code-Y/>",
-   "contributors": [
-      {
-         "name": "Hitmands - Giuseppe Mandato",
-         "email": "gius.mand.developer@gmail.com",
-         "github": "https://github.com/hitmands"
-      },
-      {
-         "name": "Lughino - Luca Pau",
-         "email": "luca.pau82@gmail.com",
-         "github": "https://github.com/Lughino"
-      }
-   ],
-   "bugs": {
-      "url": "https://github.com/Code-Y/postcss-cyspriter/issues"
-   },
-   "license": "ISC",
-   "homepage": "https://github.com/Code-Y/postcss-cyspriter#readme",
-   "dependencies": {
-      "bluebird": "^3.0.5",
-      "gulp-postcss": "^6.0.1",
-      "lodash": "^3.10.1"
-   },
-   "devDependencies": {
-      "autoprefixer": "^6.1.0",
-      "babel-preset-es2015": "^6.1.18",
-      "colors": "^1.1.2",
-      "gulp": "^3.9.0",
-      "gulp-babel": "^6.1.0",
-      "gulp-eslint": "^1.1.0",
-      "gulp-sourcemaps": "^1.6.0",
-      "gulp-util": "^3.0.7",
-      "postcss": "^5.0.12"
-   }
+  "name": "postcss-cyspriter",
+  "version": "0.0.1",
+  "description": "PostCSS Plugin for Working With Sprites",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Y/postcss-cyspriter.git"
+  },
+  "keywords": [
+    "PostCSS",
+    "Sprites"
+  ],
+  "author": "CodeY <https://github.com/Code-Y/>",
+  "contributors": [
+    {
+      "name": "Hitmands - Giuseppe Mandato",
+      "email": "gius.mand.developer@gmail.com",
+      "github": "https://github.com/hitmands"
+    },
+    {
+      "name": "Lughino - Luca Pau",
+      "email": "luca.pau82@gmail.com",
+      "github": "https://github.com/Lughino"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Code-Y/postcss-cyspriter/issues"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/Code-Y/postcss-cyspriter#readme",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "gulp-postcss": "^6.0.1",
+    "lodash": "^3.10.1",
+    "spritesmith": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "colors": "^1.1.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-eslint": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "postcss": "^5.0.12"
+  }
 }
