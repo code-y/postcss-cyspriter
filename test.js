@@ -8,7 +8,11 @@ var fs = require('fs');
 var postcssOpts = {
 };
 
-postcss(autoprefixer, cyspriter)
+postcss(autoprefixer, cyspriter({
+  src: './examples/images',
+  dest: './examples/sprites',
+  verbose: true
+}))
   .process(fs.readFileSync('./examples/src/test.css'), postcssOpts)
   .then(function(result) {
 

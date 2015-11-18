@@ -45,3 +45,4 @@ backend/wiki
 backend/rest/restaurant/data/*
 /dist
 /examples/dist
+/examples/sprites

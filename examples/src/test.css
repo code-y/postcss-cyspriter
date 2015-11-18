@@ -3,5 +3,10 @@ body {
 }
 
 .cy-icons {
-  .cy-src: 'fsfd';
+  cy-src: 'icons';
+}
+
+
+.cy-emo {
+  cy-src: 'emo';
 }

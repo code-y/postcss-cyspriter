@@ -2,7 +2,8 @@
    "restartable": "rs",
    "verbose": false,
    "watch" : [
-      "./dist"
+      "./dist",
+      "./examples"
    ],
    "env": {
       "NODE_ENV" : "development"
