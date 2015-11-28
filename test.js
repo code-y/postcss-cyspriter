@@ -12,7 +12,6 @@ postcss(autoprefixer, cyspriter({
   src: './examples/images',
   dest: './examples/sprites',
   relativeTo: './examples/dist', // full or relative path to the css output
-  httpDest: '/', // full path in the webserver (exclude relative)
   retina: true,
   padding: 5, // spacing around each sprite
   includeSize: true, // include or not size in output css
@@ -20,7 +19,6 @@ postcss(autoprefixer, cyspriter({
 }))
   .process(fs.readFileSync('./examples/src/test.css'), postcssOpts)
   .then(function(result) {
-
     if(!fs.existsSync('./examples/dist/')) {
       fs.mkdirSync('./examples/dist');
     }

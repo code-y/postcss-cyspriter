@@ -1,0 +1,36 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "classes": true
+  },
+  "rules": {
+    "quotes": [2, "single"],
+    "eol-last": [0],
+    "no-alert": [2],
+    "quote-props": [0],
+    "eqeqeq": 2,
+    "no-mixed-requires": [0],
+    "no-multi-spaces": [2],
+    "no-new-wrappers": [2],
+    "no-octal": [2],
+    "no-sync": [0],
+    "camelcase": [2],
+    "new-cap": [2],
+    "no-new-object": [2],
+    "valid-jsdoc": [2],
+    "no-multiple-empty-lines": [2],
+    "no-underscore-dangle": [0],
+    "no-extra-semi": 1,            // disallow unnecessary semicolons
+    "no-inner-declarations": 2,    // disallow function or variable declarations in nested blocks
+    "no-eval": 2,               // disallow use of eval()
+    "no-extend-native": 2,      // disallow adding to native types
+    "no-with": 2,
+    "max-len": [1, 80, 2]
+  }
+}

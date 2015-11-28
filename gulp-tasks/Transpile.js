@@ -14,8 +14,8 @@ function taskTranspile(gulp, options) {
     return gulp
       .src(options.src + '**/*.{js,es6}')
 
-//      .pipe(eslint(path.join(options.root, '.eslintrc')))
-//      .pipe(eslint.formatEach('stylish', process.stderr))
+      .pipe(eslint(path.join(options.root, '.eslintrc')))
+      .pipe(eslint.formatEach('stylish', process.stderr))
 
       .pipe(sourcemaps.init())
 
