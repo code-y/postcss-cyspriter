@@ -11,6 +11,11 @@ var postcssOpts = {
 postcss(autoprefixer, cyspriter({
   src: './examples/images',
   dest: './examples/sprites',
+  relativeTo: './examples/dist', // full or relative path to the css output
+  httpDest: '/', // full path in the webserver (exclude relative)
+  retina: true,
+  padding: 5, // spacing around each sprite
+  includeSize: true, // include or not size in output css
   verbose: true
 }))
   .process(fs.readFileSync('./examples/src/test.css'), postcssOpts)
