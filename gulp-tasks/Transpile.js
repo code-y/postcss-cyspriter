@@ -6,13 +6,15 @@ function taskTranspile(gulp, options) {
     babel = require('gulp-babel'),
     eslint = require('gulp-eslint'),
     path = require('path'),
-    colors  = require('colors')
+    colors  = require('colors'),
+    plumber = require('gulp-plumber')
     ;
 
   return function() {
 
     return gulp
       .src(options.src + '**/*.{js,es6}')
+      .pipe(plumber({ errorHandler: (e) => console.log('Transpile:ERROR', e) }))
 
       .pipe(eslint(path.join(options.root, '.eslintrc')))
       .pipe(eslint.formatEach('stylish', process.stderr))
