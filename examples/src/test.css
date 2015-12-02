@@ -11,5 +11,6 @@ body {
 
 .cy-emo {
   cy-src: 'emo';
+  cy-layout: 'diagonal';
 }
 
