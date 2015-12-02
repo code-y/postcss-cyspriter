@@ -3,9 +3,11 @@
    "verbose": false,
    "watch" : [
       "./dist",
-      "./examples"
+      "./examples/images",
+      "./examples/src"
    ],
    "env": {
       "NODE_ENV" : "development"
-   }
+   },
+   "ext": "js css png html"
 }

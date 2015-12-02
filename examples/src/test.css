@@ -1,16 +1,10 @@
-body {
-  display: flex;
-}
-
 .cy-icons {
-  cy-src: 'icons';
-  cy-retina: true;
-  cy-padding: 10px;
-  cy-include-size: false;
+  cy-src: icons;
 }
 
 .cy-emo {
   cy-src: 'emo';
-  cy-layout: 'diagonal';
+  cy-padding: 0;
+  cy-layout: 'smart';
 }
 
