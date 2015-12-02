@@ -4,8 +4,8 @@ body {
 
 .cy-icons {
   cy-src: 'icons';
-  cy-padding: 5px;
   cy-retina: true;
+  cy-padding: 10px;
   cy-include-size: false;
 }
 
