@@ -6,7 +6,7 @@ body {
   cy-src: 'icons';
   cy-padding: 5px;
   cy-retina: true;
-  cy-include-size: true;
+  cy-include-size: false;
 }
 
 .cy-emo {
