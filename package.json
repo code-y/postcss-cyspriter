@@ -34,9 +34,8 @@
   "homepage": "https://github.com/Code-Y/postcss-cyspriter#readme",
   "dependencies": {
     "bluebird": "^3.0.5",
-    "gulp-plumber": "^1.0.1",
-    "gulp-postcss": "^6.0.1",
     "lodash": "^3.10.1",
+    "q": "^1.4.1",
     "spritesmith": "^2.0.1"
   },
   "devDependencies": {
@@ -49,6 +48,8 @@
     "gulp-eslint": "^1.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
     "postcss": "^5.0.12"
   }
 }
