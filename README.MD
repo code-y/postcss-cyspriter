@@ -80,7 +80,7 @@ postcss([
 ---------
 
 #### NOTE: magic selectors are supported.
-If cyspriter founds an image with (hover|active|focus) in the filename, a pseudo-selector will be generated. Example:
+If cyspriter founds an image with (hover|active|focus|target) in the filename, a pseudo-selector will be generated. Example:
 
 considering a filename as follows: `foo_active.png`;
 
