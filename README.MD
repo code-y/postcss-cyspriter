@@ -1,63 +1,82 @@
-# postcss-cyspriter [![Build Status][ci-img]][ci]
+# postcss-cyspriter 
 
-[PostCSS] plugin: Create your own sprite using a pure css rule.
+[PostCSS] plugin that creates sprites using css rules prefixed by `cy-`.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME.svg
-[ci]:      https://travis-ci.org/GITHUB_NAME/PLUGIN_NAME
+
+What you need is just write your css rule using `cy-` prefix and assign it the `cy-src` required declaration. That's All. 
 
 ```css
 /* Input example */
-.cy-icons {
-    cy-src: icons;
+.cy-[className] {
+    cy-src: [folderName];
 }
 ```
 
 ```css
 /* Output example */
-.icons,
-.icons-imagename,
-.icons-imagename:hover {
-    background-image: url("/public/emo.png?1449070400101");
+.className,
+.className-imagename {
+    background-image: url("/[httpDest]/[spriteName].png[?cacheBuster]");
 }
 
-.icons-imagename {
+.className-imagename {
   background-position: 168px 171px;
-  height: 128px;
-  width: 128px;
 }
 ```
 
 ## Usage
 
+### Installation
+
+```bash
+$ npm install [--save] postcss-cyspriter
+```
+
+### Configuration
 ```js
-postcss([ 
-  require('postcss_cyspriter', {
+let cyspriterOptions = {
     src: './examples/images',
     dest: './examples/sprites',
-    
-    relativeTo: './examples/dist',
-    // or
-    httpDest: '/'
-    
-    padding: 10, 
-    includeSize: true,
-    verbose: true,
-    retina: true
-  }) 
+    relativeTo: './examples/dist'
+  };
+  
+postcss([ 
+  require('postcss-cyspriter', cyspriterOptions) 
 ])
 ```
 
 ## Options
 
-| OPTION      	| TYPE    	| DESCRIPTION                                                                                                                        	|
-|-------------	|---------	|------------------------------------------------------------------------------------------------------------------------------------	|
-| src         	| string  	| [GLOBAL] REQUIRED - The full or relative path to the fs directory where the sprite-folders are kept                                	|
-| dest        	| string  	| [GLOBAL] REQUIRED - The full or relative path to the fs directory where the sprite must be generated                               	|
-| relativeTo  	| string  	| [GLOBAL] REQUIRED (ignored if httpDest is provided) - Used only in the output-css, the full or relative path to the css output dir 	|
-| httpDest    	| string  	| [GLOBAL] OPTIONAL - Used only in the output-css, the full webserver path where the generated-sprites are deployed                  	|
-| verbose     	| boolean 	| [GLOBAL] OPTIONAL - default `true`, provide or not additional processing info                                                      	|
-| retina      	| boolean 	| OPTIONAL - default `false`, determines if the generated sprite should be optimized for retina displays                             	|
-| includeSize 	| boolean 	| OPTIONAL - default `true`, determines if each generated rule must be printed with its size (width, height)                         	|
+### Required
+#### Global
+ - **src** {string} - Full (or relative) file system path where sprite-folders are kept. 
+ - **dest** {string} - Full (or relative) file system path where generated sprites must be saved
+ - **relativeTo** {string} - Full (or relative) file system path usable in output css
+
+#### Local
+ - cy-src {string} - The directory name that contains all images that will composite the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
+ 
+ ### Optional
+ 
+ - **verbose** {boolean} [verbose = false] - Decides whether or not to print additional debug info in console
+ - **httpDest** {string} [httpDest = ''] - Full web server path where generated sprites are deployed, if provided the *relativeTo option* will be ignored
+ - **padding** {integer} [padding = 0] - Spacing in pixel between each image
+ - **retina** {boolean} [retina = false] - Allows support for retina displays
+ - **includeSize** {boolean} [includeSize = true] - Decides whether or not to include the dimensions in the output rules
+ - **decorate** {boolean} [decorate = true] - Decides whether or not to include useful declarations in the output rules
+ - **layout** [string] [layout = 'smart'] - Sets the layout of the generated sprite. Possible values are: `'diagonal'`,  `'vertical'`, `'horizontal'`, `'smart'`
+
+#### NOTE: except for all required, *httpDest* and *verbose* options, each option can be overridden for sprite instance using the `cy-` prefix. Example:
+```css
+.cy-icons {
+	cy-src: 'icons';
+	cy-padding: 5px;
+	cy-include-size: false;
+	cy-layout: 'vertical';
+	...
+}
+```
+---------
 
 See [PostCSS] docs for examples for your environment.
