@@ -2,7 +2,7 @@
   "name": "postcss-cyspriter",
   "version": "0.0.1",
   "description": "PostCSS Plugin for Working With Sprites",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon test.js"
   },
