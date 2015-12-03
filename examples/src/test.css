@@ -4,10 +4,11 @@
 
 .cy-emo {
   cy-src: 'emo';
-  cy-padding: 0;
-  cy-layout: 'smart';
-}
-body {
-  user-select: none;
+  cy-padding: 200;
+  cy-layout: 'diagonal';
 }
 
+
+.emo-b {
+  transition: 100ms background-position linear;
+}
