@@ -50,11 +50,14 @@ postcss([
 
 ## Options
 
-| OPTION     	| TYPE   	| DESCRIPTION                                                                                 	|
-|------------	|--------	|---------------------------------------------------------------------------------------------	|
-| src        	| string 	| REQUIRED - The full or relative path to the fs directory where the sprite-folders are kept  	|
-| dest       	| string 	| REQUIRED - The full or relative path to the fs directory where the sprite must be generated 	|
-| httpDest   	| string 	| OPTIONAL - Used only in the output-css,                                                     	|
-| relativeTo 	| string 	| OPTIONAL - The full or relative pat      
+| OPTION      	| TYPE    	| DESCRIPTION                                                                                                                        	|
+|-------------	|---------	|------------------------------------------------------------------------------------------------------------------------------------	|
+| src         	| string  	| [GLOBAL] REQUIRED - The full or relative path to the fs directory where the sprite-folders are kept                                	|
+| dest        	| string  	| [GLOBAL] REQUIRED - The full or relative path to the fs directory where the sprite must be generated                               	|
+| relativeTo  	| string  	| [GLOBAL] REQUIRED (ignored if httpDest is provided) - Used only in the output-css, the full or relative path to the css output dir 	|
+| httpDest    	| string  	| [GLOBAL] OPTIONAL - Used only in the output-css, the full webserver path where the generated-sprites are deployed                  	|
+| verbose     	| boolean 	| [GLOBAL] OPTIONAL - default `true`, provide or not additional processing info                                                      	|
+| retina      	| boolean 	| OPTIONAL - default `false`, determines if the generated sprite should be optimized for retina displays                             	|
+| includeSize 	| boolean 	| OPTIONAL - default `true`, determines if each generated rule must be printed with its size (width, height)                         	|
 
 See [PostCSS] docs for examples for your environment.
