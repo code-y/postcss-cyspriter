@@ -48,14 +48,13 @@ postcss([
 ])
 ```
 
-##Options
+## Options
 
-Postcss-cyspriter comes with a hierarchical configuration structure, this means that each single sprite can inherit and override almost all configurations.
-
-Option      | Type     | description
-____________|__________|____________
-src         | string   | The full (or relative) path to the directory where sprites-folders are kept.
-dest        | string   | The full (or relative) path to the directory where the generated sprite must be saved.
-
+| OPTION     	| TYPE   	| DESCRIPTION                                                                                 	|
+|------------	|--------	|---------------------------------------------------------------------------------------------	|
+| src        	| string 	| REQUIRED - The full or relative path to the fs directory where the sprite-folders are kept  	|
+| dest       	| string 	| REQUIRED - The full or relative path to the fs directory where the sprite must be generated 	|
+| httpDest   	| string 	| OPTIONAL - Used only in the output-css,                                                     	|
+| relativeTo 	| string 	| OPTIONAL - The full or relative pat      
 
 See [PostCSS] docs for examples for your environment.
