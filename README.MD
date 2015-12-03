@@ -4,7 +4,7 @@
 
 [PostCSS]: https://github.com/postcss/postcss
 
-What you need is just write your css rule using `cy-` prefix and assign it the `cy-src` required declaration. That's All. 
+What you need is just to write your css rule using `cy-` prefix and assign it the `cy-src` required declaration. That's All. 
 
 ```css
 /* Input example */
@@ -55,7 +55,7 @@ postcss([
  - **relativeTo** {string} - Full (or relative) file system path usable in output css
 
 #### Local
- - cy-src {string} - The directory name that contains all images that will composite the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
+ - cy-src {string} - The directory name that contains all the images that will compose the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
  
 ### Optional
  
@@ -79,7 +79,7 @@ postcss([
 ```
 
 #### NOTE: magic selectors are supported.
-If cyspriter founds an image with (hover|active|focus|target) in the filename, a pseudo-selector will be generated. Example:
+If cyspriter finds an image with (hover|active|focus|target) in the filename, a pseudo-selector will be generated. Example:
 
 considering a filename as follows: `foo_active.png`;
 
