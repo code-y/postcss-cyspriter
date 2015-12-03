@@ -42,7 +42,7 @@ let cyspriterOptions = {
   };
   
 postcss([ 
-  require('postcss-cyspriter', cyspriterOptions) 
+  require('postcss-cyspriter')(cyspriterOptions) 
 ])
 ```
 
