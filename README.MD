@@ -57,7 +57,7 @@ postcss([
 #### Local
  - cy-src {string} - The directory name that contains all images that will composite the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
  
- ### Optional
+### Optional
  
  - **verbose** {boolean} [verbose = false] - Decides whether or not to print additional debug info in console
  - **httpDest** {string} [httpDest = ''] - Full web server path where generated sprites are deployed, if provided the *relativeTo option* will be ignored
@@ -78,5 +78,16 @@ postcss([
 }
 ```
 ---------
+
+#### NOTE: magic selectors are supported.
+If cyspriter founds an image with (hover|active|focus) in the filename, a pseudo-selector will be generated. Example:
+
+considering a filename as follows: `foo_active.png`;
+
+cyspriter generates a rule like this:
+
+```css
+.[spritemap]-foo:active { ... }
+```
 
 See [PostCSS] docs for examples for your environment.
