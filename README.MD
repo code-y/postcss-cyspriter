@@ -77,7 +77,6 @@ postcss([
 	...
 }
 ```
----------
 
 #### NOTE: magic selectors are supported.
 If cyspriter founds an image with (hover|active|focus|target) in the filename, a pseudo-selector will be generated. Example:
@@ -90,4 +89,5 @@ cyspriter generates a rule like this:
 .[spritemap]-foo:active { ... }
 ```
 
+---------
 See [PostCSS] docs for examples for your environment.
