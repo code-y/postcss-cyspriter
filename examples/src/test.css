@@ -6,6 +6,8 @@
   cy-src: 'emo';
   cy-padding: 200;
   cy-layout: 'diagonal';
+  cy-decorate: false;
+  cy-includeSize: false;
 }
 
 
