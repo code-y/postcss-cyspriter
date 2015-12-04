@@ -4,7 +4,7 @@
 
 [PostCSS]: https://github.com/postcss/postcss
 
-What you need is just write your css rule using `cy-` prefix and assign it the `cy-src` required declaration. That's All. 
+What you need is just to write your css rule using `cy-` prefix and assign it the `cy-src` required declaration. That's All. 
 
 ```css
 /* Input example */
@@ -42,7 +42,7 @@ let cyspriterOptions = {
   };
   
 postcss([ 
-  require('postcss-cyspriter', cyspriterOptions) 
+  require('postcss-cyspriter')(cyspriterOptions) 
 ])
 ```
 
@@ -80,7 +80,7 @@ postcss([
 ```
 
 #### NOTE: magic selectors are supported.
-If cyspriter founds an image with (hover|active|focus|target) in the filename, a pseudo-selector will be generated. Example:
+If cyspriter finds an image with (hover|active|focus|target) in the filename, a pseudo-selector will be generated. Example:
 
 considering a filename as follows: `foo_active.png`;
 
