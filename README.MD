@@ -56,6 +56,7 @@ postcss([
 
 #### Local
  - cy-src {string} - The directory name that contains all images that will composite the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
+ - cy-debug {boolean} - Enables debug info for sprite instance
  
 ### Optional
  
