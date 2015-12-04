@@ -3,6 +3,8 @@ node_modules/
 npm-debug.log
 
 test/
+.idea
+.git
 .travis.yml
 
 gulpfile.js
