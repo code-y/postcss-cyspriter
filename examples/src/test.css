@@ -1,5 +1,5 @@
 .cy-icons {
-  cy-src: icons;
+  cy-srca: icons;
 }
 
 .cy-emo {
@@ -8,6 +8,7 @@
   cy-layout: 'diagonal';
   cy-decorate: false;
   cy-includeSize: false;
+  cy-debug: true;
 }
 
 
