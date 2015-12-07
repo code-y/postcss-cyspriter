@@ -1,17 +1,20 @@
 .cy-icons {
-  cy-srca: icons;
+  cy-src: icons;
 }
 
 .cy-emo {
   cy-src: 'emo';
-  cy-padding: 200;
-  cy-layout: 'diagonal';
-  cy-decorate: false;
-  cy-includeSize: false;
-  cy-debug: true;
+  cy-padding: 100;
 }
 
 
 .emo-b {
   transition: 100ms background-position linear;
+}
+
+.foo, .baz {
+  cy-include: '.emo-b';
+}
+.bar {
+  cy-include: '.emo-b true';
 }
