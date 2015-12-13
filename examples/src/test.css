@@ -11,6 +11,13 @@
   cys-debug: true;
 }
 
+.cys-retina {
+  cys-src: 'retina';
+  cys-padding: 10;
+  cys-debug: true;
+  cys-retina: true;
+}
+
 
 .emo-b {
   transition: 100ms background-position linear;
