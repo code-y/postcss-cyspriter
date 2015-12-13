@@ -1,14 +1,14 @@
-.cy-icons {
-  cy-src: icons;
+.cys-icons {
+  cys-src: icons;
 }
 
-.cy-emo {
-  cy-src: 'emo';
-  cy-padding: 20;
-  cy-layout: 'smart';
-  cy-decorate: false;
-  cy-includeSize: true;
-  cy-debug: true;
+.cys-emo {
+  cys-src: 'emo';
+  cys-padding: 20;
+  cys-layout: 'smart';
+  cys-decorate: false;
+  cys-includeSize: true;
+  cys-debug: true;
 }
 
 
