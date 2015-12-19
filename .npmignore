@@ -3,15 +3,13 @@ node_modules/
 npm-debug.log
 
 test/
-.idea
+.idea/
 .git
 .travis.yml
 
-gulpfile.js
-gulp-tasks
 test.js
 nodemon.json
 .eslintrc
 .editorconfig
-examples
-lib
+examples/
+lib/

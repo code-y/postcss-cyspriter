@@ -1,0 +1,6 @@
+.cys-magic {
+  cys-src: 'magicsel';
+  cys-padding: 20;
+  cys-decorate: false;
+  cys-includeSize: true;
+}

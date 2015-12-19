@@ -1,0 +1,140 @@
+.retina,
+.retina-addressbook,
+.retina-aeroplane,
+.retina-aidsribbon,
+.retina-alarm,
+.retina-anchor,
+.retina-announcer,
+.retina-youtube {
+
+    background-image: url("../sprites/retina.png");
+
+    background-size: 568px 568px;
+}
+
+.retina-addressbook {
+
+    background-position: 0 0;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.retina-aeroplane {
+
+    background-position: -84px -84px;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.retina-aidsribbon {
+
+    background-position: -168px -168px;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.retina-alarm {
+
+    background-position: -252px -252px;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.retina-anchor {
+
+    background-position: -336px -336px;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.retina-announcer {
+
+    background-position: -420px -420px;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.retina-youtube {
+
+    background-position: -504px -504px;
+
+    height: 64px;
+
+    width: 64px;
+}
+
+.magic,
+.magic-b,
+.magic-b:active,
+.magic-b:hover {
+
+    background-image: url("../sprites/magic.png");
+}
+
+.magic-b {
+
+    background-position: -170px 0;
+
+    height: 128px;
+
+    width: 128px;
+}
+
+.magic-b:active {
+
+    background-position: 0 -170px;
+
+    height: 128px;
+
+    width: 128px;
+}
+
+.magic-b:hover {
+
+    background-position: 0 0;
+
+    height: 150px;
+
+    width: 150px;
+}
+
+.icons,
+.icons-c,
+.icons-d {
+
+    background-image: url("../sprites/icons.png");
+
+    display: inline-block;
+
+    overflow: hidden;
+}
+
+.icons-c {
+
+    background-position: 0 0;
+
+    height: 128px;
+
+    width: 128px;
+}
+
+.icons-d {
+
+    background-position: -138px 0;
+
+    height: 128px;
+
+    width: 128px;
+}

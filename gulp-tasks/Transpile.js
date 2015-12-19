@@ -14,7 +14,8 @@ function taskTranspile(gulp, options) {
 
     return gulp
       .src(options.src + '**/*.{js,es6}')
-      .pipe(plumber({ errorHandler: function(e) { console.log('Transpile:ERROR', e);} }))
+      .pipe(plumber(
+        { errorHandler: function(e) { console.log('Transpile:ERROR', e);} }))
 
       .pipe(eslint(path.join(options.root, '.eslintrc')))
       .pipe(eslint.formatEach('stylish', process.stderr))
