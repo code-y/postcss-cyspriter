@@ -1,6 +1,6 @@
 {
   "name": "postcss-cyspriter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "PostCSS Plugin for Working With Sprites",
   "main": "dist/index.js",
   "scripts": {
