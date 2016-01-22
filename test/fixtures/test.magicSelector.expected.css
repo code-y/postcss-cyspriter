@@ -1,0 +1,21 @@
+.magic,
+.magic-b,
+.magic-b:active,
+.magic-b:hover {
+    background-image: url("../sprites/magic.png");
+}
+.magic-b {
+    background-position: -170px 0;
+    height: 128px;
+    width: 128px;
+}
+.magic-b:active {
+    background-position: 0 -170px;
+    height: 128px;
+    width: 128px;
+}
+.magic-b:hover {
+    background-position: 0 0;
+    height: 150px;
+    width: 150px;
+}

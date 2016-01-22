@@ -1,15 +1,15 @@
 # postcss-cyspriter 
 
-[PostCSS] plugin that creates sprites using css rules prefixed by `cy-`.
+[PostCSS] plugin that creates sprites using css rules prefixed by `cys-`.
 
 [PostCSS]: https://github.com/postcss/postcss
 
-What you need is just to write your css rule using `cy-` prefix and assign it the `cy-src` required declaration. That's All. 
+What you need is just to write your css rule using `cys-` prefix and assign it the `cys-src` required declaration. That's All.
 
 ```css
 /* Input example */
-.cy-[className] {
-    cy-src: [folderName];
+.cys-[className] {
+    cys-src: [folderName];
 }
 ```
 
@@ -30,7 +30,7 @@ What you need is just to write your css rule using `cy-` prefix and assign it th
 ### Installation
 
 ```bash
-$ npm install [--save] postcss-cyspriter
+$ npm i [--save] postcss-cyspriter
 ```
 
 ### Configuration
@@ -55,26 +55,28 @@ postcss([
  - **relativeTo** {string} - Full (or relative) file system path usable in output css
 
 #### Local
- - cy-src {string} - The directory name that contains all images that will composite the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
- - cy-debug {boolean} - Enables debug info for sprite instance
+ - cys-src {string} - The directory name that contains all images that will compose the sprite, this property will be merged with the global `src`option (` src = path.join(global.src, src); `)
+ - cys-debug {boolean} - Enables debug info for sprite instance
  
 ### Optional
  
  - **verbose** {boolean} [verbose = false] - Decides whether or not to print additional debug info in console
+ - **cacheBuster** {boolean} [cacheBuster = true] - Append a query string to the sprite to prevent cache
  - **httpDest** {string} [httpDest = ''] - Full web server path where generated sprites are deployed, if provided the *relativeTo option* will be ignored
  - **padding** {integer} [padding = 0] - Spacing in pixel between each image
  - **retina** {boolean} [retina = false] - Allows support for retina displays
+ - **ratio** {number} [ratio = 2] - Defines the ratio to be applied to images retina
  - **includeSize** {boolean} [includeSize = true] - Decides whether or not to include the dimensions in the output rules
  - **decorate** {boolean} [decorate = true] - Decides whether or not to include useful declarations in the output rules
- - **layout** [string] [layout = 'smart'] - Sets the layout of the generated sprite. Possible values are: `'diagonal'`,  `'vertical'`, `'horizontal'`, `'smart'`
+ - **layout** {string} [layout = 'smart'] - Sets the layout of the generated sprite. Possible values are: `'diagonal'`,  `'vertical'`, `'horizontal'`, `'smart'`
 
-#### NOTE: except for all required, *httpDest* and *verbose* options, each option can be overridden for sprite instance using the `cy-` prefix. Example:
+#### NOTE: except for *httpDest* and *verbose* options, each option can be overridden for sprite instance using the `cys-` prefix. Example:
 ```css
-.cy-icons {
-	cy-src: 'icons';
-	cy-padding: 5px;
-	cy-include-size: false;
-	cy-layout: 'vertical';
+.cys-icons {
+	cys-src: 'icons';
+	cys-padding: 5px;
+	cys-include-size: false;
+	cys-layout: 'vertical';
 	...
 }
 ```
@@ -92,3 +94,16 @@ cyspriter generates a rule like this:
 
 ---------
 See [PostCSS] docs for examples for your environment.
+
+
+## Authors
+
+| Contributor | Type | E-mail |
+|-------------|------|--------|
+| [Luca Pau](https://github.com/Lughino) | author  | <luca.pau82@gmail.com> |
+| [Giuseppe Mandato](https://github.com/hitmands) | author  | <gius.mand.developer@gmail.com> |
+
+---------
+## Copyright
+
+Copyright (c) 2015 Code-Y - Luca Pau, Giuseppe Mandato. See [LICENSE](LICENSE) for details.

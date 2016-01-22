@@ -1,0 +1,7 @@
+.cys-retina {
+  cys-src: 'retina';
+  cys-padding: 20;
+  cys-retina: true;
+  cys-decorate: false;
+  cys-layout: 'diagonal';
+}

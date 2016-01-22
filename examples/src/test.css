@@ -1,16 +1,22 @@
-.cy-icons {
-  cy-srca: icons;
+.cys-icons {
+  cys-src: icons;
 }
 
-.cy-emo {
-  cy-src: 'emo';
-  cy-padding: 200;
-  cy-layout: 'diagonal';
-  cy-decorate: false;
-  cy-includeSize: false;
-  cy-debug: true;
+.cys-emo {
+  cys-src: 'emo';
+  cys-padding: 20;
+  cys-layout: 'smart';
+  cys-decorate: false;
+  cys-includeSize: true;
+  cys-debug: true;
 }
 
+.cys-retina {
+  cys-src: 'retina';
+  cys-padding: 10;
+  cys-debug: true;
+  cys-retina: true;
+}
 
 .emo-b {
   transition: 100ms background-position linear;

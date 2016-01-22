@@ -1,0 +1,18 @@
+.cys-retina {
+  cys-src: 'retina';
+  cys-padding: 20;
+  cys-retina: true;
+  cys-decorate: false;
+  cys-layout: 'diagonal';
+}
+
+.cys-magic {
+  cys-src: 'magicsel';
+  cys-padding: 20;
+  cys-decorate: false;
+  cys-includeSize: true;
+}
+
+.cys-icons {
+  cys-src: icons;
+}

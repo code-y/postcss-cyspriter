@@ -16,10 +16,11 @@ var
       dest: path.join('./', 'examples', 'dist')
     }
   }
-;
+  ;
 
 var task = function(task) {
-  return require(path.join(configs.root, 'gulp-tasks', task + '.js')).call(this, gulp, configs);
+  return require(path.join(configs.root, 'gulp-tasks', task + '.js'))
+    .call(this, gulp, configs);
 };
 
 gulp

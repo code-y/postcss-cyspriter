@@ -15,7 +15,7 @@ postcss(autoprefixer, cyspriter({
   padding: 10, // spacing around each sprite
   includeSize: true, // include or not size in output css
   verbose: true,
-  retina: true
+  retina: false
 }))
   .process(fs.readFileSync('./examples/src/test.css'), postcssOpts)
   .then(function(result) {

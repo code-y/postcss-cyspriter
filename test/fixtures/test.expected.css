@@ -1,0 +1,17 @@
+.icons,
+.icons-c,
+.icons-d {
+    background-image: url("../sprites/icons.png");
+    display: inline-block;
+    overflow: hidden;
+}
+.icons-c {
+    background-position: 0 0;
+    height: 128px;
+    width: 128px;
+}
+.icons-d {
+    background-position: -128px 0;
+    height: 128px;
+    width: 128px;
+}
