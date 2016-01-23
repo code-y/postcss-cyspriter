@@ -103,7 +103,9 @@ Postcss community already has two sprite plugins:
 **Why cys-spriter is different?**
 
 1. postcss-sprites groups all background images into a single sprite, we don't! We make sprites only when specified, our solutions is thought about building set of images, as icons for example.
+
 2. postcss-easysprites is similar to postcss-sprites with the difference that you need to specify the sprite-map in order to pack the background-image.
+
 3: Definitively, we built cys-spriter having in mind what compass-spriting does. For further information, you should have a look at [Compass Spriting](http://compass-style.org/help/tutorials/spriting/)
 
 ```css
