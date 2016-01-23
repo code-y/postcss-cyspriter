@@ -106,7 +106,7 @@ Postcss community already has two sprite plugins:
 
 2. postcss-easysprites is similar to postcss-sprites with the difference that you need to specify the sprite-map in order to pack the background-image.
 
-3: Definitively, we built cys-spriter having in mind what compass-spriting does. For further information, you should have a look at [Compass Spriting](http://compass-style.org/help/tutorials/spriting/)
+3. Definitively, we built cys-spriter having in mind what compass-spriting does. For further information, you should have a look at [Compass Spriting](http://compass-style.org/help/tutorials/spriting/)
 
 ```css
 .[spritemap]-foo:active { ... }
