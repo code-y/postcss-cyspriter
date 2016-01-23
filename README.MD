@@ -108,10 +108,6 @@ Postcss community already has two sprite plugins:
 
 3. Definitively, we built cys-spriter having in mind what compass-spriting does. For further information, you should have a look at [Compass Spriting](http://compass-style.org/help/tutorials/spriting/)
 
-```css
-.[spritemap]-foo:active { ... }
-```
-
 ---------
 See [PostCSS] docs for examples for your environment.
 
